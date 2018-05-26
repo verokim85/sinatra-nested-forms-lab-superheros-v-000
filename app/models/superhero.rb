@@ -1,18 +1,21 @@
-class HERO
-
-  HERO = []
-
+class Superhero
   attr_accessor :name, :power, :bio
+
+  @@heroes = []
 
   def initialize(args)
     @name = args[:name]
     @power = args[:power]
     @bio = args[:bio]
-    HERO << self
+    @@heroes << self
   end
 
   def self.all
-    HERO
+    @@heroes
+  end
+
+  def self.clear
+    @@heroes.clear
   end
 
 end

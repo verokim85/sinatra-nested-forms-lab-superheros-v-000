@@ -13,6 +13,14 @@ class App < Sinatra::Base
       @team = Team.new(params[:team])
 
       params[:team][:hero].each do |details|
+<<<<<<< HEAD
+=======
+
+        Superhero.new(details)
+      end
+      @heroes = Superhero.all
+
+>>>>>>> 6282057d68d2a27425dc184d36acc889494172da
         Hero.new(details)
       end
 

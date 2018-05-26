@@ -1,5 +1,45 @@
+
   <form action="/teams" method="post">
 
+<h1>Create a Team and Heroes!</h1>
+
+<form method="post" action="/teams">
+  <label for="team_name">Team Name</label>
+  <input id="team_name" type="text" name="team[name]" />
+  <label for="team_motto">Team Motto</label>
+  <input id="team_motto" type="text" name="team[motto]" />
+  <br><br>
+
+  <label for="member1_name">First Member Name</label>
+  <input id="member1_name" type="text" name="team[hero][][name]" />
+  <label for="member1_power">First Member Power</label>
+  <input id="member1_power" type="text" name="team[hero][][power]" />
+  <label for="member1_bio">First Member Bio</label>
+  <input id="member1_bio" type="text" name="team[hero][][bio]" />
+  <br><br>
+
+  <label for="member2_name">Second Member Name</label>
+  <input id="member2_name" type="text" name="team[hero][][name]" />
+  <label for="member2_power">Second Member Power</label>
+  <input id="member2_power" type="text" name="team[hero][][power]" />
+  <label for="member2_bio">Second Member Bio</label>
+  <input id="member2_bio" type="text" name="team[hero][][bio]" />
+  <br><br>
+
+  <label for="member3_name">Third Member Name</label>
+  <input id="member3_name" type="text" name="team[hero][][name]" />
+  <label for="member3_power">Third Member Power</label>
+  <input id="member3_power" type="text" name="team[hero][][power]" />
+  <label for="member3_bio">Third Member Bio</label>
+  <input id="member3_bio" type="text" name="team[hero][][bio]" />
+  <br><br>
+
+  <input type="submit" id="submit">
+</form>
+=======
+  <form action="/teams" method="post">
+
+>>>>>>> 6282057d68d2a27425dc184d36acc889494172da
     <h1>Create a Team and Heroes!</h1>
     Team Name: <input id="team[name]" type="text" name="team[name]">
     Team Motto: <input id="team[motto]" type="text" name="team[motto]">
@@ -21,3 +61,7 @@
 
     <input id="submit" type="submit">
   </form>
+<<<<<<< HEAD
+=======
+>>>>>>> 590fb3c9e50bd861cf1e6c7e8c740f70637af6a9
+>>>>>>> 6282057d68d2a27425dc184d36acc889494172da
